@@ -1,0 +1,98 @@
+/* utility */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito sans', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.space-between{
+justify-content: space-between;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card{
+    flex-basis: 100%;
+    background-color: rgb(181 222 255);
+}
+
+
+/* header */
+header{
+    background-color: rgb(2 132 253);
+    color: white;
+}
+
+.contenitore-nav{
+    align-items: center;
+    padding: 1.25rem; 
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 1rem;
+}
+
+header .contenitore-nav ul{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.button{
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+.btn-b{
+    background-color: white;
+    color: black;
+}
+/* main */
+#intro{
+    
+}
+
+.titolo-blue{
+    color: rgb(2 132 253);
+}
+
+/* Responsive Tablet */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Responsive Desktop */
+@media only screen and (min-width: 992px) {
+    header .contenitore-nav .fa-bars{
+        display: none;
+    }
+
+    header .contenitore-nav ul{
+        display: block;
+    }
+}
