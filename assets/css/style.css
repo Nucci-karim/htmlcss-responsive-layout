@@ -27,12 +27,20 @@ justify-content: space-between;
 
 .container{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 10%;
 }
 
 .card{
     flex-basis: 100%;
-    background-color: rgb(181 222 255);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.25em;
+    text-align: center;
+}
+
+.card p {
+    line-height: 140%;
+    margin: 1.25rem 0;
 }
 
 
@@ -68,19 +76,90 @@ a{
     
 }
 
-.btn-b{
+.btn-bianco{
     background-color: white;
     color: black;
 }
 /* main */
+#intro .card:first-child{
+    text-align: left;
+    padding-bottom: 0;
+}
+
+#intro  .fa-apple{
+    font-size: 1rem;
+    color: white;
+}
 
 .titolo-blue{
     color: rgb(2 132 253);
 }
 
+.celeste{
+    background-color: rgb(181 222 255);
+}
+
+.btn-blue{
+    background-color: rgb(2 132 253);
+    color: white;
+    padding: 5px 2.5rem;
+    margin: 1.25rem 0;
+}
+
+#intro img{
+    width: 80%;
+    margin: 1rem auto;
+    display: block;
+}
+
+.card i{
+    font-size: 3rem;
+    color: rgb(2 132 253);
+}
+
+.bg-purple{
+    background-color: rgb(151 146 228);
+}
+
+.bg-white{
+    background-color: white;
+    color: black;
+}
+
+img{
+    width: 80%;
+    display: block
+    ;
+}
+
+
 /* Responsive Tablet */
 @media only screen and (min-width: 768px) {
-    
+    #intro img{
+        width: 50%;
+        display: block;
+    }
+    #intro>div{
+        justify-content: space-between;
+    }
+
+    .card{
+        flex-basis: calc(33% - 1%);
+    }
+
+    #intro .card:first-child{
+        flex-basis: calc(66% - 1%);
+    }
+
+    .celeste:first-child p{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img{
+        width: 50%;
+        display: block;
+    }
 }
 
 /* Responsive Desktop */
